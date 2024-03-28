@@ -147,6 +147,11 @@ h3 {
   color: transparent;
 }
 
+.rgbeat-title {
+  text-shadow: 0px 0px 10px #8a2be2;
+  animation: 3s linear 0s infinite normal none running border-RGB-animation;
+}
+
 @media (max-width: 900px) {
   .heading-primary {
     font-size: 6.5rem;
@@ -642,5 +647,12 @@ body:not(.user-is-tabbing) a:focus {
 @media (max-width: 500px) {
   .footer {
     padding: var(--gutter-medium) 0;
+  }
+}
+
+/* Animation */
+@keyframes border-RGB-animation {
+  50% {
+    filter: hue-rotate(360deg);
   }
 }
